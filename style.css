@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --primary-verydarkBlue: hsl(243, 87%, 12%);
+    --primary-desaturatedBlue: hsl(238, 22%, 44%);
+
+    --accent-brightBlue: hsl(224, 93%, 58%);
+    --accent-moderateCyan: hsl(170, 45%, 43%);
+
+    --neutral-lightgrayishBlue: hsl(240, 75%, 98%);
+    --neutral-lightGray: hsl(0, 0%, 75%);
+
+    --fs-paragraph: 16px;
+
+    /*Headings, Call-to-actions, Header Navigation*/
+    --ff-heading:'Raleway', sans-serif;
+
+    --ff-body :'Open Sans', sans-serif;
+
+    --fw-Bold: 700;
+}
+
+/*=======================================*/
+/*||||||||||=====CSS RESET=====||||||||||*/
+/*=======================================*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/*========================================*/
+/*========================================*/
+
+body {
+    background-color: white;
+    font-family: var(--ff-body);
+    font-size: 28px;
+}
+
+main {
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    color: var(--primary-verydarkBlue);
+}
+
+p {
+    color: var(--primary-verydarkBlue);
+}
+
+header {
+    display: flex;
+    padding: 0 48px;
+    margin: 48px 0 190px 0;
+    justify-content: flex-end;
+}
+
+header svg {
+    margin-right: auto;
+}
+
+.nav_links {
+    display: flex;
+    gap: 48px;
+}
+
+.nav_links a {
+    color: var(--primary-verydarkBlue);
+}
+.fylo-intro {
+    text-align: center;
+}
+
+.fylo-intro img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.fylo-intro h2 {
+    font-weight: var(--fw-Bold);
+    font-size: 48px;
+    margin: 90px 40px 60px 40px;
+}
+
+.fylo-intro p{
+    margin: 0 90px 60px 90px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email input, .email button {
+    width: 608px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.email input {
+    background-color: white;
+    color: var(--neutral-lightGray);
+    border-radius: 10px;
+    padding-left: 40px;
+    margin-bottom: 32px;
+    border-color: var(--primary-desaturatedBlue);
+    border-style: solid;
+}
+
+.email button {
+    background-color: var(--accent-brightBlue);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-Bold);
+    border: none;
+    margin-bottom: 180px;
+}
+
+/*===========================================*/
+
+.productive {
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productive img {
+    margin-top: 180px;
+    width: 75%;
+}
+
+.productive h2 {
+    font-size: 32px;
+    font-weight: var(--fw-Bold);
+    text-align: center;
+    margin: 180px 0 60px 0;
+}
+
+.desc p {
+    margin: 0 60px 0 40px;
+    color: var(--primary-desaturatedBlue);
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.see-more a {
+    color: var(--accent-moderateCyan);  
+}
+
+.see-more img {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 16px;
+}
+
+.testimonial {
+    padding:36px 0 40px 0;
+    margin: 0 95px 163px 95px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px var(--neutral-lightGray);
+}
+
+.testimonial img {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 29px;
+    height: 29px;
+    margin: 0 0 25px 0;
+    margin-left: 50px;
+}
+
+.testimonial-text {
+    font-size: 21px;  
+    margin: 0 32px 32px 53px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+span {
+    margin-left: 14px;
+}
+
+.profile h3 {
+    color: var(--primary-verydarkBlue);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-Bold);
+    font-size: 21px;
+}
+
+.profile p {
+    font-size: 13px;
+}
+
+/*====================================*/
+.early-access {
+    background-color: var(--primary-desaturatedBlue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.early-access h2 {
+    color: white;
+    font-weight: var(--fw-Bold);
+    font-size: 36px;
+    margin: 115px 0 50px 0;
+}
+.early-access p {
+    font-size: 28px;
+    color: white;
+    padding: 0 118px 0 72px;
+    margin-bottom: 50px;
+}
+
+.free-trial input, .free-trial button {
+    width: 480px;
+    height: 64px;
+    border-radius: 5px;
+    margin: 0 138px 0 132px;
+}
+
+.free-trial input {
+    background-color: white;
+    color: var(--neutral-lightGray);
+    padding-left: 20px;
+    margin-bottom: 32px;
+    border-color: var(--primary-desaturatedBlue);
+    border-style: solid;
+}
+
+.free-trial button {
+    background-color: var(--accent-brightBlue);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-Bold);
+    border: none;
+    margin-bottom: 142px;
+}
+/*===========================================*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-bottom: 94px;
+    padding-top: 130px;
+    background-color: var(--primary-verydarkBlue);
+    line-height: 2em;
+}
+
+footer path {
+    fill: var(--neutral-lightgrayishBlue);
+}
+.contact-info {
+    margin-top: 72px;
+}
+
+.contact-info img {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    color: var(--neutral-lightgrayishBlue);
+}
+
+footer nav {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+footer li {
+    list-style: none;
+    
+}
+
+footer a {
+    color: var(--neutral-lightgrayishBlue);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.social-media svg {
+    width: 54px;
+    height: 54px;
+}
+
+.twitter {
+    margin: 0 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
