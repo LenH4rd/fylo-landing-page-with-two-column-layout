@@ -59,6 +59,16 @@ button:hover {
 li {
     list-style: none;
 }
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
 /*========================================*/
 /*========================================*/
 
@@ -148,6 +158,7 @@ header svg {
     font-family: var(--ff-heading);
     font-weight: var(--fw-Bold);
     border: none;
+    color: var(--neutral-lightgrayishBlue);
 }
 
 .email button, .free-trial button:hover {
@@ -188,28 +199,40 @@ header svg {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    border-bottom: 2px solid var(--accent-moderateCyan);
     margin: 0 14.0625rem;
     padding-bottom: 0.3125rem;
+    position: relative;
+}
+
+.see-more::after {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--accent-moderateCyan);
 }
 
 .see-more a {
     color: var(--accent-moderateCyan);  
 }
 
-.see-more img {
+.see-more svg {
     display: inline;
     margin: 0 0 0 0.625rem;
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #3DA08F;
+    border-radius: 100%;
 }
 
-.see-more:hover {
-    border-bottom: 2px solid hsl(174, 59%, 88%);
+.see-more:hover::after {
+    color: hsl(174, 59%, 88%);
+    background-color: hsl(174, 59%, 88%);
 }
 
-.see-more img:hover {
-    filter:brightness(150%);
+.see-more svg:hover {
+    background-color: hsl(174, 59%, 88%);
 }
 
 .see-more a:hover {
@@ -284,6 +307,7 @@ span {
     font-size: 2.25rem;
     margin: 7.1875rem 0 3.125rem 0;
 }
+
 .early-access p {
     font-size: 1.75rem;
     color: white;
@@ -313,6 +337,7 @@ span {
     font-weight: var(--fw-Bold);
     border: none;
     margin-bottom: 8.875rem;
+    color: var(--neutral-lightgrayishBlue);
 }
 /*===========================================*/
 
@@ -479,12 +504,9 @@ footer a {
     .see-more {
         display: flex;
         justify-content: left;
-        margin: 0 26.5625rem 2.5rem 0;
-    }
-
-    .see-more img{
-        width: 1rem;
-        height: 1rem;
+        margin: 0 0 2.5rem 0;
+        width: 21%;
+        
     }
 
     .testimonial {
