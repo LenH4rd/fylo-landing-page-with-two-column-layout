@@ -51,6 +51,10 @@ img, picture, svg, video {
 a {
     text-decoration: none;
 }
+
+button:hover {
+    cursor: pointer;
+}
 /*========================================*/
 /*========================================*/
 
@@ -92,22 +96,24 @@ header svg {
 .nav_links a {
     color: var(--primary-verydarkBlue);
 }
+
 .fylo-intro {
     text-align: center;
+    padding-bottom: 180px;
 }
 
-.fylo-intro img {
+.illustration-1 {
     width: 75%;
     margin: 0 auto;
 }
 
-.fylo-intro h2 {
+.get-started h2 {
     font-weight: var(--fw-Bold);
     font-size: 48px;
     margin: 90px 40px 60px 40px;
 }
 
-.fylo-intro p{
+.get-started p{
     margin: 0 90px 60px 90px;
 }
 
@@ -126,8 +132,7 @@ header svg {
 
 .email input {
     background-color: white;
-    color: var(--neutral-lightGray);
-    border-radius: 10px;
+    color: var(--primary-verydarkBlue);
     padding-left: 40px;
     margin-bottom: 32px;
     border-color: var(--primary-desaturatedBlue);
@@ -139,24 +144,26 @@ header svg {
     font-family: var(--ff-heading);
     font-weight: var(--fw-Bold);
     border: none;
-    margin-bottom: 180px;
 }
 
+.email button, .free-trial button:hover {
+    background-color: hsl(221, 100%, 71%);
+}
+
+::placeholder {
+    color: var(--neutral-lightGray);
+}
 /*===========================================*/
 
 .productive {
-    background-image: url(images/bg-curve-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background-color: var(--neutral-lightgrayishBlue);
+    padding-bottom: 163px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.productive img {
-    margin-top: 180px;
+.illustration-2 {
+    margin: 0 auto;
     width: 75%;
 }
 
@@ -164,10 +171,10 @@ header svg {
     font-size: 32px;
     font-weight: var(--fw-Bold);
     text-align: center;
-    margin: 180px 0 60px 0;
+    margin: 0 0 60px 0;
 }
 
-.desc p {
+.prod-desc p {
     margin: 0 60px 0 40px;
     color: var(--primary-desaturatedBlue);
 }
@@ -176,6 +183,9 @@ header svg {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    border-bottom: 2px solid var(--accent-moderateCyan);
+    margin: 0 225px;
+    padding-bottom: 5px;
 }
 
 .see-more a {
@@ -184,14 +194,25 @@ header svg {
 
 .see-more img {
     display: inline;
-    margin: 0;
-    padding: 0;
-    width: 16px;
+    margin: 0 0 0 10px;
+    width: 28px;
+    height: 28px;
 }
 
+.see-more:hover {
+    border-bottom: 2px solid hsl(174, 59%, 88%);
+}
+
+.see-more img:hover {
+    filter:brightness(150%);
+}
+
+.see-more a:hover {
+    color: hsl(174, 59%, 88%);
+}
 .testimonial {
     padding:36px 0 40px 0;
-    margin: 0 95px 163px 95px;
+    margin: 0 95px 0 95px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -209,9 +230,10 @@ header svg {
     margin-left: 50px;
 }
 
-.testimonial-text {
+.testimonial p {
     font-size: 21px;  
     margin: 0 32px 32px 53px;
+    color: var(--primary-verydarkBlue);
 }
 
 .profile {
@@ -237,6 +259,7 @@ span {
 
 .profile p {
     font-size: 13px;
+    margin: 0;
 }
 
 /*====================================*/
@@ -271,7 +294,7 @@ span {
 
 .free-trial input {
     background-color: white;
-    color: var(--neutral-lightGray);
+    color: var(--primary-verydarkBlue);
     padding-left: 20px;
     margin-bottom: 32px;
     border-color: var(--primary-desaturatedBlue);
@@ -300,6 +323,7 @@ footer {
 footer path {
     fill: var(--neutral-lightgrayishBlue);
 }
+
 .contact-info {
     margin-top: 72px;
 }
@@ -320,11 +344,14 @@ footer nav {
 
 footer li {
     list-style: none;
-    
 }
 
 footer a {
     color: var(--neutral-lightgrayishBlue);
+}
+
+.contact-list {
+    margin-top: 100px;
 }
 
 .social-media {
@@ -342,6 +369,253 @@ footer a {
     margin: 0 22px;
 }
 
+.footer-nav a:hover {
+    color: var(--accent-brightBlue);
+}
+
+.social-media path:hover {
+    fill: var(--accent-brightBlue);
+}
+/*=========================================*/
+
+@media (min-width: 751px) {
+    body {
+        font-size: var(--fs-paragraph);
+    }
+
+    main {
+        padding-top: 64px;
+    }
+    header {
+        margin: 0 0 160px 0;
+        padding: 0 80px;
+    }
+
+    .fylo-intro {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        padding: 0 80px;
+        align-items: center;
+        gap: 50px;
+        padding-bottom: 180px;
+    }
+
+    .get-started {
+        width: 50%;
+    }
+
+    .get-started h2 {
+        margin: 0 0 32px 0;
+        font-size: 38px;
+    }
+
+    .get-started p {
+        padding: 0;
+        margin: 0 0 28px 0;
+        font-size: 19px;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: 0;
+        gap: 16px;
+    }
+
+    .email input {
+        width: 320px;
+        height: 45px;
+        margin: 0;
+        border: 1px solid var(--neutral-lightGray);
+        border-radius: 3px;
+        padding-left: 20px;
+    }
+
+    .email button {
+        width: 200px;
+        height: 45px;  
+    }
+
+    .illustration-1 {
+        width: 50%;
+    }
+
+    .productive {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        padding: 0 80px 106px 80px;
+        text-align: left;
+        gap: 80px;
+    }
+    
+    .illustration-2 {
+        width: 50%;
+    }
+    
+    .prod-desc {
+        width: 50%;
+    }
+
+    .prod-desc h2 {
+        margin: 0 0 40px 0;
+        text-align: left;
+        font-size: 36px;
+    }
+
+    .prod-desc p{
+        padding: 0 60px 0 0;
+        margin: 0;
+    }
+
+    .see-more {
+        display: flex;
+        justify-content: left;
+        margin: 0 425px 40px 0;
+    }
+
+    .see-more img{
+        width: 16px;
+        height: 16px;
+    }
+
+    .testimonial {
+        width: 356px;
+        height: 216px;
+        display: flex;
+        margin: 0;
+        padding: 0 20px 0 33px;
+    }
+    
+    .testimonial img {
+        width: 13px;
+        height: 12px;
+        margin: 25px 0 19px 0;
+    }
+
+    .testimonial p {
+        font-size: 14px;
+        padding: 0;
+        margin: 0 0 17px 0;
+    }
+
+
+    .profile {
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile img {
+        width: 32px;
+        height: 32px;
+        margin: 0;
+    }
+
+    span {
+        margin-left: 8px;
+    }
+
+    .profile h3 {
+        font-size: 14px;
+    }
+
+    .profile p {
+        font-size: 10px;
+    }
+
+    .early-access {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 112px 80px 98px 80px;
+        gap: 244px;
+    }
+
+    .ea-desc {
+        text-align: left;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ea-desc h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .ea-desc p {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        gap: 16px;
+    }
+
+    .free-trial input {
+        width: 480px;
+        height: 48px;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .free-trial button {
+        width: 200px;
+        height: 48px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding: 110px 80px 72px 80px;
+        margin: 0;
+        height: 391px;
+    }
+
+    .fylo-footer {
+        margin: 0 220px 0 0;
+        padding: 0;
+    }
+
+    .contact-info {
+        margin: 24px 0 0 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        gap: 190px;
+        margin: 0;
+        padding: 70px 0 0 0;
+    }
+
+    .contact-list {
+        margin-top: 0;
+        margin-right: 185px;
+    }
+
+    .social-media {
+        margin: 0;
+        padding: 60px 0 0 0;
+    }
+
+    .social-media a {
+        height: 31px;
+        width: 31px;
+    }
+
+}
 
 
 
