@@ -10,7 +10,7 @@
     --neutral-lightgrayishBlue: hsl(240, 75%, 98%);
     --neutral-lightGray: hsl(0, 0%, 75%);
 
-    --fs-paragraph: 16px;
+    --fs-paragraph: 1rem;
 
     /*Headings, Call-to-actions, Header Navigation*/
     --ff-heading:'Raleway', sans-serif;
@@ -55,13 +55,17 @@ a {
 button:hover {
     cursor: pointer;
 }
+
+li {
+    list-style: none;
+}
 /*========================================*/
 /*========================================*/
 
 body {
     background-color: white;
     font-family: var(--ff-body);
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 main {
@@ -80,7 +84,7 @@ p {
 header {
     display: flex;
     padding: 0 48px;
-    margin: 48px 0 190px 0;
+    margin: 3rem 0 11.875rem 0;
     justify-content: flex-end;
 }
 
@@ -90,7 +94,7 @@ header svg {
 
 .nav_links {
     display: flex;
-    gap: 48px;
+    gap: 3rem;
 }
 
 .nav_links a {
@@ -99,7 +103,7 @@ header svg {
 
 .fylo-intro {
     text-align: center;
-    padding-bottom: 180px;
+    padding-bottom: 11.25rem;
 }
 
 .illustration-1 {
@@ -109,12 +113,12 @@ header svg {
 
 .get-started h2 {
     font-weight: var(--fw-Bold);
-    font-size: 48px;
-    margin: 90px 40px 60px 40px;
+    font-size: 3rem;
+    margin: 5.625rem 2.5rem 3.75rem 2.5rem;
 }
 
 .get-started p{
-    margin: 0 90px 60px 90px;
+    margin: 0 5.625rem 3.75rem 5.625rem;
 }
 
 .email {
@@ -125,16 +129,16 @@ header svg {
 }
 
 .email input, .email button {
-    width: 608px;
-    height: 80px;
-    border-radius: 5px;
+    width: 38rem;
+    height: 5rem;
+    border-radius: 0.3125rem;
 }
 
 .email input {
     background-color: white;
     color: var(--primary-verydarkBlue);
-    padding-left: 40px;
-    margin-bottom: 32px;
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
     border-color: var(--primary-desaturatedBlue);
     border-style: solid;
 }
@@ -157,9 +161,10 @@ header svg {
 
 .productive {
     background-color: var(--neutral-lightgrayishBlue);
-    padding-bottom: 163px;
+    padding-bottom: 10.1875rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .illustration-2 {
@@ -168,14 +173,14 @@ header svg {
 }
 
 .productive h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: var(--fw-Bold);
     text-align: center;
-    margin: 0 0 60px 0;
+    margin: 0 0 3.75rem 0;
 }
 
 .prod-desc p {
-    margin: 0 60px 0 40px;
+    margin: 0 3.75rem 0 2.5rem;
     color: var(--primary-desaturatedBlue);
 }
 
@@ -184,8 +189,8 @@ header svg {
     justify-content: center;
     flex-direction: row;
     border-bottom: 2px solid var(--accent-moderateCyan);
-    margin: 0 225px;
-    padding-bottom: 5px;
+    margin: 0 14.0625rem;
+    padding-bottom: 0.3125rem;
 }
 
 .see-more a {
@@ -194,9 +199,9 @@ header svg {
 
 .see-more img {
     display: inline;
-    margin: 0 0 0 10px;
-    width: 28px;
-    height: 28px;
+    margin: 0 0 0 0.625rem;
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 .see-more:hover {
@@ -210,29 +215,30 @@ header svg {
 .see-more a:hover {
     color: hsl(174, 59%, 88%);
 }
+
 .testimonial {
-    padding:36px 0 40px 0;
-    margin: 0 95px 0 95px;
+    padding: 2.25rem 0 2.5rem 0;
+    margin: 0 5.9375rem 0 5.9375rem;
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px var(--neutral-lightGray);
+    border-radius: 0.625rem;
+    box-shadow: 0px 0px 1.875rem var(--neutral-lightGray);
 }
 
 .testimonial img {
     display: flex;
     justify-content: left;
     align-items: left;
-    width: 29px;
-    height: 29px;
-    margin: 0 0 25px 0;
-    margin-left: 50px;
+    width: 1.8125rem;
+    height: 1.8125rem;
+    margin: 0 0 1.5625rem 0;
+    margin-left: 3.125rem;
 }
 
 .testimonial p {
-    font-size: 21px;  
-    margin: 0 32px 32px 53px;
+    font-size: 1.3125rem;  
+    margin: 0 2rem 2rem 3.3125rem;
     color: var(--primary-verydarkBlue);
 }
 
@@ -241,24 +247,24 @@ header svg {
 }
 
 .profile img {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
 }
 
 span {
-    margin-left: 14px;
+    margin-left: 0.875rem;
 }
 
 .profile h3 {
     color: var(--primary-verydarkBlue);
     font-family: var(--ff-heading);
     font-weight: var(--fw-Bold);
-    font-size: 21px;
+    font-size: 1.3125rem;
 }
 
 .profile p {
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin: 0;
 }
 
@@ -275,28 +281,28 @@ span {
 .early-access h2 {
     color: white;
     font-weight: var(--fw-Bold);
-    font-size: 36px;
-    margin: 115px 0 50px 0;
+    font-size: 2.25rem;
+    margin: 7.1875rem 0 3.125rem 0;
 }
 .early-access p {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: white;
-    padding: 0 118px 0 72px;
-    margin-bottom: 50px;
+    padding: 0 7.375rem 0 4.5rem;
+    margin-bottom: 3.125rem;
 }
 
 .free-trial input, .free-trial button {
-    width: 480px;
-    height: 64px;
-    border-radius: 5px;
-    margin: 0 138px 0 132px;
+    width: 30rem;
+    height: 4rem;
+    border-radius: 0.3125rem;
+    margin: 0 8.625rem 0 8.25rem;
 }
 
 .free-trial input {
     background-color: white;
     color: var(--primary-verydarkBlue);
-    padding-left: 20px;
-    margin-bottom: 32px;
+    padding-left: 1.25rem;
+    margin-bottom: 2rem;
     border-color: var(--primary-desaturatedBlue);
     border-style: solid;
 }
@@ -306,16 +312,16 @@ span {
     font-family: var(--ff-heading);
     font-weight: var(--fw-Bold);
     border: none;
-    margin-bottom: 142px;
+    margin-bottom: 8.875rem;
 }
 /*===========================================*/
 
 footer {
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
-    padding-bottom: 94px;
-    padding-top: 130px;
+    padding-left: 5rem;
+    padding-bottom: 5.875rem;
+    padding-top: 8.125rem;
     background-color: var(--primary-verydarkBlue);
     line-height: 2em;
 }
@@ -325,12 +331,12 @@ footer path {
 }
 
 .contact-info {
-    margin-top: 72px;
+    margin-top: 4.5rem;
 }
 
 .contact-info img {
     display: inline;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .contact-info p {
@@ -338,8 +344,8 @@ footer path {
 }
 
 footer nav {
-    margin-top: 120px;
-    margin-bottom: 80px;
+    margin-top: 7.5rem;
+    margin-bottom: 5rem;
 }
 
 footer li {
@@ -351,7 +357,7 @@ footer a {
 }
 
 .contact-list {
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .social-media {
@@ -361,12 +367,12 @@ footer a {
 }
 
 .social-media svg {
-    width: 54px;
-    height: 54px;
+    width: 3.375rem;
+    height: 3.375rem;
 }
 
 .twitter {
-    margin: 0 22px;
+    margin: 0 1.375rem;
 }
 
 .footer-nav a:hover {
@@ -384,21 +390,21 @@ footer a {
     }
 
     main {
-        padding-top: 64px;
+        padding-top: 4rem;
     }
     header {
-        margin: 0 0 160px 0;
-        padding: 0 80px;
+        margin: 0 0 10rem 0;
+        padding: 0 5rem;
     }
 
     .fylo-intro {
         display: flex;
         flex-direction: row-reverse;
         text-align: left;
-        padding: 0 80px;
+        padding: 0 5rem;
         align-items: center;
-        gap: 50px;
-        padding-bottom: 180px;
+        gap: 3.125rem;
+        padding-bottom: 11.25rem;
     }
 
     .get-started {
@@ -406,14 +412,14 @@ footer a {
     }
 
     .get-started h2 {
-        margin: 0 0 32px 0;
-        font-size: 38px;
+        margin: 0 0 2rem 0;
+        font-size: 2.375rem;
     }
 
     .get-started p {
         padding: 0;
-        margin: 0 0 28px 0;
-        font-size: 19px;
+        margin: 0 0 1.75rem 0;
+        font-size: 1.1875rem;
     }
 
     .email {
@@ -421,21 +427,21 @@ footer a {
         flex-direction: row;
         justify-content: left;
         margin: 0;
-        gap: 16px;
+        gap: 1rem;
     }
 
     .email input {
-        width: 320px;
-        height: 45px;
+        width: 20rem;
+        height: 2.8125rem;
         margin: 0;
-        border: 1px solid var(--neutral-lightGray);
-        border-radius: 3px;
-        padding-left: 20px;
+        border: 0.0625rem solid var(--neutral-lightGray);
+        border-radius: 0.1875rem;
+        padding-left: 1.25rem;
     }
 
     .email button {
-        width: 200px;
-        height: 45px;  
+        width: 12.5rem;
+        height: 2.8125rem;  
     }
 
     .illustration-1 {
@@ -446,9 +452,9 @@ footer a {
         display: flex;
         flex-direction: row-reverse;
         margin: 0;
-        padding: 0 80px 106px 80px;
+        padding: 0 5rem 6.625rem 5rem;
         text-align: left;
-        gap: 80px;
+        gap: 5rem;
     }
     
     .illustration-2 {
@@ -460,45 +466,45 @@ footer a {
     }
 
     .prod-desc h2 {
-        margin: 0 0 40px 0;
+        margin: 0 0 2.5rem 0;
         text-align: left;
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .prod-desc p{
-        padding: 0 60px 0 0;
+        padding: 0 3.75rem 0 0;
         margin: 0;
     }
 
     .see-more {
         display: flex;
         justify-content: left;
-        margin: 0 425px 40px 0;
+        margin: 0 26.5625rem 2.5rem 0;
     }
 
     .see-more img{
-        width: 16px;
-        height: 16px;
+        width: 1rem;
+        height: 1rem;
     }
 
     .testimonial {
-        width: 356px;
-        height: 216px;
+        width: 22.25rem;
+        height: 13.5rem;
         display: flex;
         margin: 0;
-        padding: 0 20px 0 33px;
+        padding: 0 1.25rem 0 2.0625rem;
     }
     
     .testimonial img {
-        width: 13px;
-        height: 12px;
-        margin: 25px 0 19px 0;
+        width: 0.8125rem;
+        height: 0.75rem;
+        margin: 1.5625rem 0 1.1875rem 0;
     }
 
     .testimonial p {
-        font-size: 14px;
+        font-size: 0.875rem;
         padding: 0;
-        margin: 0 0 17px 0;
+        margin: 0 0 1.0625rem 0;
     }
 
 
@@ -508,8 +514,8 @@ footer a {
     }
 
     .profile img {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         margin: 0;
     }
 
@@ -518,19 +524,19 @@ footer a {
     }
 
     .profile h3 {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .profile p {
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 
     .early-access {
         display: flex;
         flex-direction: row;
         margin: 0;
-        padding: 112px 80px 98px 80px;
-        gap: 244px;
+        padding: 7rem 5rem 6.125rem 5rem;
+        gap: 15.25rem;
     }
 
     .ea-desc {
@@ -543,14 +549,14 @@ footer a {
     .ea-desc h2 {
         margin: 0;
         padding: 0;
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 1.875rem;
+        margin-bottom: 1.875rem;
     }
 
     .ea-desc p {
         padding: 0;
         margin: 0;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .free-trial {
@@ -559,19 +565,19 @@ footer a {
         margin: 0;
         padding: 0;
         width: 50%;
-        gap: 16px;
+        gap: 1rem;
     }
 
     .free-trial input {
-        width: 480px;
-        height: 48px;
+        width: 30rem;
+        height: 3rem;
         margin: 0;
-        padding-left: 20px;
+        padding-left: 1.25rem;
     }
 
     .free-trial button {
-        width: 200px;
-        height: 48px;
+        width: 12.5rem;
+        height: 3rem;
         margin: 0;
         padding: 0;
     }
@@ -579,40 +585,40 @@ footer a {
     footer {
         display: flex;
         flex-direction: row;
-        padding: 110px 80px 72px 80px;
+        padding: 6.875rem 5rem 4.5rem 5rem;
         margin: 0;
-        height: 391px;
+        height: 24.4375rem;
     }
 
     .fylo-footer {
-        margin: 0 220px 0 0;
+        margin: 0 13.75rem 0 0;
         padding: 0;
     }
 
     .contact-info {
-        margin: 24px 0 0 0;
+        margin: 1.5rem 0 0 0;
     }
 
     .footer-nav {
         display: flex;
-        gap: 190px;
+        gap: 11.875rem;
         margin: 0;
-        padding: 70px 0 0 0;
+        padding: 4.375rem 0 0 0;
     }
 
     .contact-list {
         margin-top: 0;
-        margin-right: 185px;
+        margin-right: 11.5625rem;
     }
 
     .social-media {
         margin: 0;
-        padding: 60px 0 0 0;
+        padding: 3.75rem 0 0 0;
     }
 
     .social-media a {
-        height: 31px;
-        width: 31px;
+        height: 1.9375rem;
+        width: 1.9375rem;
     }
 
 }
